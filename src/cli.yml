@@ -3,14 +3,6 @@ version: "1.0"
 author: Ty <ty@notarealemail.com>
 about: A not-so-realistic vpn
 args:
-  - keyfile:
-      short: k
-      long: keyfile
-      required: true
-      takes_value: true
-      help: A file containing the long-term key used by both the client and
-      server to authenticate one another. File should contain a base64 encoded
-      string and nothing else.
 subcommands:
     - client:
         about: Enters client mode. The hostname and port of the server are required.

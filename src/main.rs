@@ -23,13 +23,6 @@ fn main() -> Result<(), Box<dyn Error>>{
 
     greet();
 
-    // let keyfile = settings.value_of("keyfile").unwrap();
-    // let keyfile = File::open(keyfile);
-
-    // let mut key = String::new();
-    // keyfile.read_to_string(&mut key);
-    // let key = base64::decode(key);
-
     if settings.is_present("client") {
         let settings = settings.subcommand_matches("client").unwrap();
         let host = settings.value_of("host").unwrap();
