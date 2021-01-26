@@ -1,0 +1,1 @@
+./target/debug/crabby-vpn server -p 8000
